@@ -25,8 +25,16 @@ res.render('userform', {auth})
 
 
 app.post('/users/save', (req, res) => {
-const name = req.body.name
-const age = req.body.age
+const marca = req.body.marca
+const  potencia = req.body.potencia
+const motor = req.body.motor
+const nome = req.body.nome
+const marca = req.body.name
+const marca = req.body.name
+const marca = req.body.name
+const marca = req.body.name
+
+
 const user = { name: name, age: age }
 res.render('viewuser', { user: user, auth })
 

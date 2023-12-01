@@ -1,35 +1,39 @@
 {{#if auth}}
 <style>
-    .div{
+    .container{
         text-align: center;
+        background-color: rgb(197, 246, 255);
     }
-</style>
+    .div{
 
+        }
+</style>
+<div class="container">
 <h1>Cadastro de Carros</h1>
 <form action="/users/save" method="post">
 <div class="col-md-4 ">
-<label for="name" class="form-label">Marca:</label>
-<input type="text" name="name" class="form-control">
+<label for="marca" class="form-label">Marca:</label>
+<input type="text" name="marca" class="form-control">
 </div>
 <div class="col-md-4 ">
-<label for="age" class="form-label">Potencia:</label>
-<input type="text" class="form-control" name="age">
+<label for="potencia" class="form-label">Potencia:</label>
+<input type="text" class="form-control" name="potencia">
 </div>
 <div class="col-md-4 ">
-<label for="age" class="form-label">Motor:</label>
-<input type="text" class="form-control" name="age">
+<label for="motor" class="form-label">Motor:</label>
+<input type="text" class="form-control" name="motor">
 </div>
 <div class="col-md-4 ">
-<label for="age" class="form-label">Nome:</label>
-<input type="text" class="form-control" name="age">
+<label for="nome" class="form-label">Nome:</label>
+<input type="text" class="form-control" name="nome">
 </div>
 <div class="col-md-4 ">
-<label for="age" class="form-label">Cor:</label>
-<input type="text" class="form-control" name="age">
+<label for="cor" class="form-label">Cor:</label>
+<input type="text" class="form-control" name="cor">
 </div>
 <div class="col-md-4 ">
-<label for="age" class="form-label">Ano de fabricado:</label>
-<input type="text" class="form-control" name="age">
+<label for="anodf" class="form-label">Ano de fabricado:</label>
+<input type="text" class="form-control" name="anodf">
 </div>
 <br>
 <div class="col-12">
@@ -42,6 +46,6 @@
 <a href="/">Home</a>
 </div>
 </div>
-
+</div>
 
 {{/if}}
