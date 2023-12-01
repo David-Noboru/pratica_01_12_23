@@ -25,15 +25,15 @@ res.render('userform', {auth})
 
 
 app.post('/users/save', (req, res) => {
-const marca = req.body.marca
-const  potencia = req.body.potencia
-const motor = req.body.motor
-const nome = req.body.nome
-const cor = req.body.cor
-const anodf = req.body.anodf
+const marca = req.body.marca;
+const  potencia = req.body.potencia;
+const motor = req.body.motor;
+const nome = req.body.nome;
+const cor = req.body.cor;
+const anodf = req.body.anodf;
 
 
-const user = { name: name, age: age }
+const user = { marca: marca, potencia: potencia, motor: motor, nome: nome, cor: cor, anodf:anodf}
 res.render('viewuser', { user: user, auth })
 
 })

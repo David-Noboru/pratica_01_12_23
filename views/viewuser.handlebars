@@ -1,7 +1,21 @@
 {{#if auth}}
 
-<h2>O usuário {{user.name}} tem {{user.age}} anos de idade!</h2>
+<style>
+.container{
+    background-color: rgb(197, 246, 255);
+}
+</style>
 
+<div class="container">
+    <br> <br> <br>
+<h4>Nome do carro: {{user.nome}}</h4>
+<h4>Marca: {{user.marca}}</h4>
+<h4>Potencia: {{user.potencia}}</h4>
+<h4>motor: {{user.motor}}</h4>
+<h4>Cor: {{user.cor}}</h4>
+<h4>Ano de fabrica: {{user.anodf}}</h4>
+</div>
+<br>
 <a href="/">Home</a>
-<a href="/users/add">Novo Usuário</a>
+<a href="/users/add">Cadastrar novo carro</a>
 {{/if}}
