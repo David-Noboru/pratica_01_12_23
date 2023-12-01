@@ -4,12 +4,9 @@ const port = 3000
 const exphbs = require('express-handlebars')
 
 
-
-
 //configure template handlebars
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
-
 
 //parser para leitura do body
 app.use(
@@ -26,6 +23,7 @@ app.get('/users/add', (req, res) => {
 res.render('userform')
 })
 
+
 app.post('/users/save', (req, res) => {
 const name = req.body.name
 const age = req.body.age
@@ -33,6 +31,7 @@ const user = { name: name, age: age }
 res.render('viewuser', { user: user })
 
 })
+
 
 const usuario = {
 login: 'teste',
