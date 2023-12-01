@@ -20,7 +20,7 @@ app.use(express.json())
 app.use(express.static('public'))
 
 app.get('/users/add', (req, res) => {
-res.render('userform')
+res.render('userform', {auth})
 })
 
 
@@ -28,14 +28,14 @@ app.post('/users/save', (req, res) => {
 const name = req.body.name
 const age = req.body.age
 const user = { name: name, age: age }
-res.render('viewuser', { user: user })
+res.render('viewuser', { user: user, auth })
 
 })
 
 
 const usuario = {
-login: 'teste',
-senha: 123
+login: 'teste@gmail.com',
+senha: 555
 
 }
 
