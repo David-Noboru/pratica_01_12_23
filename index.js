@@ -29,10 +29,8 @@ const marca = req.body.marca
 const  potencia = req.body.potencia
 const motor = req.body.motor
 const nome = req.body.nome
-const marca = req.body.name
-const marca = req.body.name
-const marca = req.body.name
-const marca = req.body.name
+const cor = req.body.cor
+const anodf = req.body.anodf
 
 
 const user = { name: name, age: age }
