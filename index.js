@@ -2,7 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 const exphbs = require('express-handlebars')
+const {LocalStorage} = require ("node-localstorage");
 
+var localStorage = new LocalStorage('./scratch');
 
 //configure template handlebars
 app.engine('handlebars', exphbs.engine())
@@ -34,6 +36,20 @@ const anodf = req.body.anodf;
 
 
 const user = { marca: marca, potencia: potencia, motor: motor, nome: nome, cor: cor, anodf:anodf}
+localStorage.setItem('marca', `${marca}`)
+localStorage.setItem('potencia', `${potencia}`)
+localStorage.setItem('motor', `${motor}`)
+localStorage.setItem('nome', `${nome}`)
+localStorage.setItem('cor', `${cor}`)
+localStorage.setItem('anodf', `${anodf}`)
+
+console.log(localStorage.getItem('marca'))
+console.log(localStorage.getItem('potencia'))
+console.log(localStorage.getItem('motor'))
+console.log(localStorage.getItem('nome'))
+console.log(localStorage.getItem('cor'))
+console.log(localStorage.getItem('anodf'))
+
 res.render('viewuser', { user: user, auth })
 
 })
