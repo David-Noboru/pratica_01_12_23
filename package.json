@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/david-noboru/bootstrap_form#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
+    "express-session": "^1.17.3",
     "node-localstorage": "^3.0.5"
   },
   "devDependencies": {
